@@ -15,7 +15,10 @@ public class Vehiculos {
         return precio;
     }
 
-    public String mostrarDatos() {
-        return "Marca: " + marca + "\nModelo: " + modelo + "\nPrecio: " + precio + "\n";
+    @Override
+    public String toString() {
+        return "Marca: " + marca + " / Modelo: " + modelo + " / Precio: " + String.format("%.2f", precio) + '.';
     }
+
+
 }
